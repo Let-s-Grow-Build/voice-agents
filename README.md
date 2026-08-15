@@ -40,16 +40,16 @@ This repo tries to answer all of that with sources, not vibes.
 | # | File | What it covers |
 |---|---|---|
 | 00 | [Executive Summary](Architecture/00_executive_summary.md) | The whole research in one page — key findings, the core architectural shift, and the bottom-line recommendation |
-| 01 | [Traditional Architecture & Limitations](architecture/01_traditional_architecture_and_limitations.md) | Deep dive on `STT → LLM → TTS`: latency, streaming, turn-taking, barge-in, context loss, prosody loss, system complexity |
-| 02 | [Modern STS Deep Dive](architecture/02_modern_sts_deep_dive.md) | What's actually inside an STS model — audio encoders/codecs, audio tokens, where reasoning happens, whether text really disappears |
-| 03 | [Architecture Comparison](architecture/03_architecture_comparison.md) | Side-by-side tables: components, data representation, latency, turn-taking, cost, observability, lock-in — and *why* each difference exists |
-| 04 | [Current STS Models (2026)](architecture/04_current_sts_models_2026.md) | Model-by-model: OpenAI Realtime, Gemini Live, Amazon Nova Sonic, Kyutai Moshi, Sesame CSM, Qwen3/3.5-Omni — the actual architectural innovation each one introduced |
-| 05 | [Latency Deep Dive](architecture/05_latency_analysis.md) | Where latency lives in each architecture, with published numbers (Moshi: 160–200ms, Qwen3-Omni: ~234ms, cascades: ~600ms–1s well-tuned) |
-| 06 | [Case Studies](architecture/06_case_studies.md) | Customer support, real-time translation, voice assistants, enterprise agents — old vs. new architecture, what improves, what gets worse |
-| 07 | [Upgrading an Existing System](architecture/07_upgrading_existing_system.md) | Four concrete upgrade paths, from "optimize your cascade" to "hybrid STS + deterministic agent" |
-| 08 | [Recommended Production Architecture](architecture/08_production_architecture.md) | Full 2026 production blueprint — what goes inside the STS model vs. what stays external (tools, memory, auth, safety, fallback) |
-| 09 | [Tradeoffs & Evaluation Framework](architecture/09_tradeoffs_and_evaluation_framework.md) | What you gain vs. lose (debuggability, determinism, cost, compliance), plus a decision matrix |
-| 10 | [Final Recommendation & Future](architecture/10_final_recommendation_and_future.md) | The direct answer: hybrid, not full replacement, for most production systems — and where the field is heading |
+| 01 | [Traditional Architecture & Limitations](Architecture/01_traditional_architecture_and_limitations.md) | Deep dive on `STT → LLM → TTS`: latency, streaming, turn-taking, barge-in, context loss, prosody loss, system complexity |
+| 02 | [Modern STS Deep Dive](Architecture/02_modern_sts_deep_dive.md) | What's actually inside an STS model — audio encoders/codecs, audio tokens, where reasoning happens, whether text really disappears |
+| 03 | [Architecture Comparison](Architecture/03_architecture_comparison.md) | Side-by-side tables: components, data representation, latency, turn-taking, cost, observability, lock-in — and *why* each difference exists |
+| 04 | [Current STS Models (2026)](Architecture/04_current_sts_models_2026.md) | Model-by-model: OpenAI Realtime, Gemini Live, Amazon Nova Sonic, Kyutai Moshi, Sesame CSM, Qwen3/3.5-Omni — the actual architectural innovation each one introduced |
+| 05 | [Latency Deep Dive](Architecture/05_latency_analysis.md) | Where latency lives in each architecture, with published numbers (Moshi: 160–200ms, Qwen3-Omni: ~234ms, cascades: ~600ms–1s well-tuned) |
+| 06 | [Case Studies](Architecture/06_case_studies.md) | Customer support, real-time translation, voice assistants, enterprise agents — old vs. new architecture, what improves, what gets worse |
+| 07 | [Upgrading an Existing System](Architecture/07_upgrading_existing_system.md) | Four concrete upgrade paths, from "optimize your cascade" to "hybrid STS + deterministic agent" |
+| 08 | [Recommended Production Architecture](Architecture/08_production_architecture.md) | Full 2026 production blueprint — what goes inside the STS model vs. what stays external (tools, memory, auth, safety, fallback) |
+| 09 | [Tradeoffs & Evaluation Framework](Architecture/09_tradeoffs_and_evaluation_framework.md) | What you gain vs. lose (debuggability, determinism, cost, compliance), plus a decision matrix |
+| 10 | [Final Recommendation & Future](Architecture/10_final_recommendation_and_future.md) | The direct answer: hybrid, not full replacement, for most production systems — and where the field is heading |
 
 **Suggested reading order:** start with `00`, then read straight through `01 → 10`. If you only have 10 minutes, read `00` and `10`.
 
