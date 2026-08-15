@@ -39,7 +39,7 @@ This repo tries to answer all of that with sources, not vibes.
 
 | # | File | What it covers |
 |---|---|---|
-| 00 | [Executive Summary](architecture/00_executive_summary.md) | The whole research in one page — key findings, the core architectural shift, and the bottom-line recommendation |
+| 00 | [Executive Summary](Architecture/00_executive_summary.md) | The whole research in one page — key findings, the core architectural shift, and the bottom-line recommendation |
 | 01 | [Traditional Architecture & Limitations](architecture/01_traditional_architecture_and_limitations.md) | Deep dive on `STT → LLM → TTS`: latency, streaming, turn-taking, barge-in, context loss, prosody loss, system complexity |
 | 02 | [Modern STS Deep Dive](architecture/02_modern_sts_deep_dive.md) | What's actually inside an STS model — audio encoders/codecs, audio tokens, where reasoning happens, whether text really disappears |
 | 03 | [Architecture Comparison](architecture/03_architecture_comparison.md) | Side-by-side tables: components, data representation, latency, turn-taking, cost, observability, lock-in — and *why* each difference exists |
